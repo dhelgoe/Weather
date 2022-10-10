@@ -16,7 +16,8 @@ city.addEventListener('click', function(){
     }).then((data) =>{
         console.log(data.list[0])
         console.log(data.list[0].main.temp)
-        var temperature = data[0].temp
+        var temperature = data.list[0].weather[0];
+        console.log(temperature)
 
     } ) 
         

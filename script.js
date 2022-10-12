@@ -4,6 +4,17 @@ var currenttemp = document.querySelector('#currenttemp')
 var windspeed = document.querySelector('#windspeed')
 var humidity = document.querySelector('#humidity')
 var photo = document.querySelector('#icon')
+var date = document.querySelector('#date')
+var today = moment();
+date.innerHTML=today.format("MMM Do, YYYY")
+//console.log(date)
+
+//console.log(typeof today.format("MMM Do, YYYY"))
+
+
+
+
+
 
 
 city.addEventListener('click', function(){
@@ -38,7 +49,12 @@ city.addEventListener('click', function(){
         console.log(iconurl)
         photo.src=iconurl
 
+
     } ) 
+    
+
+
+ 
         
     
 })
